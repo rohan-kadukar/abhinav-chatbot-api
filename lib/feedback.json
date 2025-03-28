@@ -1,0 +1,42 @@
+{
+  "feedback": [
+    {
+      "question": "What programs do you offer for IIT-JEE?",
+      "answer": "JEE Mains Session is scheduled for 2025-02-10. First session for JEE Mains.\nJEE Preparation (18 months): Intensive coaching for JEE Mains and Advanced focusing on conceptual clarity, problem solving, and exam strategies. Highlights: Advanced problem solving techniques, Subject expert sessions, Digital study resources, Personalized mentorship.",
+      "feedback": "negative",
+      "reason": "wow",
+      "timestamp": "2025-03-26T04:16:19.874Z",
+      "id": "m8pex3ystcgi6jhqx7h"
+    },
+    {
+      "question": "Tell me about your NEET preparation courses",
+      "answer": "NEET Application Deadline is scheduled for 2024-12-05. Final date for NEET application submission.\nNEET Preparation (24 months): Structured program emphasizing NCERT-based learning and practical lab sessions for Biology, Physics, and Chemistry. Highlights: Specialized biology labs, Regular mock tests, Focused doubt sessions.",
+      "feedback": "negative",
+      "reason": "juu",
+      "timestamp": "2025-03-26T09:41:20.148Z",
+      "id": "m8pqj2cjru9nq63yyb"
+    },
+    {
+      "question": "Tell me about your NEET preparation courses",
+      "answer": "NEET Application Deadline is scheduled for 2024-12-05. Final date for NEET application submission.\nNEET Preparation (24 months): Structured program emphasizing NCERT-based learning and practical lab sessions for Biology, Physics, and Chemistry. Highlights: Specialized biology labs, Regular mock tests, Focused doubt sessions.",
+      "feedback": "negative",
+      "reason": "ok",
+      "timestamp": "2025-03-27T14:46:17.117Z",
+      "id": "m8rgv1ui4j7zbo1dnsg"
+    },
+    {
+      "question": "What programs do you offer for IIT-JEE?",
+      "answer": "JEE Mains Session is scheduled for 2025-02-10. First session for JEE Mains.\nJEE Preparation (18 months): Intensive coaching for JEE Mains and Advanced focusing on conceptual clarity, problem solving, and exam strategies. Highlights: Advanced problem solving techniques, Subject expert sessions, Digital study resources, Personalized mentorship.",
+      "feedback": "positive",
+      "reason": null,
+      "timestamp": "2025-03-27T14:46:27.178Z",
+      "id": "m8rgv8u7c3bgw9t5up"
+    },
+    {
+      "question": "ok",
+      "answer": "ok",
+      "feedback": "negative",
+      "reason": "ok"
+    }
+  ]
+}
