@@ -235,6 +235,54 @@ app.all('/questions', (req, res) => {
   }
 });
 
+app.all('/data1', (req, res) => {
+  try {
+    const filePath = path.join(__dirname, 'lib', 'data1.json');
+    const currentData = readJsonFile(filePath);
+    
+    if (!currentData) {
+      return res.status(500).json({ error: 'Could not read data file' });
+    }
+    
+    if (req.method === 'POST') {
+      const newData = req.body;
+      
+      // Validate required fields
+      if (!validateFaqData(newData)) {
+        return res.status(400).json({ 
+          error: 'Invalid data format', 
+          message: 'FAQ entries require id, question, and answer fields'
+        });
+      }
+      
+      // Check if faqs array exists
+      if (!Array.isArray(currentData.faqs)) {
+        return res.status(500).json({ error: 'Invalid data structure in data.json' });
+      }
+      
+      // Add metadata if not provided
+      const enhancedData = addMetadata(newData, 'faq');
+      
+      currentData.faqs.push(enhancedData);
+      
+      if (writeJsonFile(filePath, currentData)) {
+        return res.status(201).json({ 
+          success: true, 
+          message: 'Data added successfully', 
+          data: enhancedData 
+        });
+      } else {
+        return res.status(500).json({ error: 'Failed to write to data file' });
+      }
+    }
+    
+    res.json(currentData);
+  } catch (error) {
+    console.error('Error in /data1 endpoint:', error);
+    res.status(500).json({ error: 'Internal server error', message: error.message });
+  }
+});
+
 // Health check endpoint
 app.get('/health', (req, res) => {
   res.status(200).json({ status: 'ok', message: 'Server is running' });
